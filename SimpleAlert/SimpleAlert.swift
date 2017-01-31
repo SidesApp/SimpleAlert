@@ -55,7 +55,7 @@ open class AlertController: UIViewController {
     open fileprivate(set) var textFields: [UITextField] = []
     open var coverColor = UIColor.black.withAlphaComponent(0.4)
     fileprivate var textFieldHandlers: [((UITextField?) -> Void)?] = []
-    fileprivate var customView: UIView?
+    open var customView: UIView?
     fileprivate var transitionCoverView: UIView?
     fileprivate var displayTargetView: UIView?
     fileprivate var presentedAnimation: Bool = true
